@@ -5,5 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-  const a = 'ts'
+
+definePageMeta({
+  layout: 'default' 
+})
 </script>
