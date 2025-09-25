@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <HeroSection />
   </div>
 </template>
 
@@ -9,4 +9,5 @@
 definePageMeta({
   layout: 'default' 
 })
+import HeroSection from '~/components/index/HeroSection.vue'
 </script>

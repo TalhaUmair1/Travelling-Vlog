@@ -8,12 +8,16 @@ const route = useRoute()
   <UHeader>
     <template #left>
       <NuxtLink to="/">
-        <UHeader title="Nuxt UI" />
+        <UHeader title="Travel Log" />
       </NuxtLink>
     </template>
     <template #right>
-      <ULink class="bg-primary text-neutral px-4 py-1 rounded-sm" as="button">Sign up</ULink>
-      <UColorModeButton />
+    <UButton icon="i-lucide-github" >Sing in with GitHub </UButton>
+    <UColorModeButton>
+    <template #fallback>
+      <UButton loading variant="ghost" color="neutral" />
+    </template>
+  </UColorModeButton>
     </template>
   </UHeader>
 </template>
